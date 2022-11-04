@@ -55,6 +55,11 @@ Após fazer o [download do aplicativo](https://mega.nz/file/xcpnkZqb#stGI2EibhJ7
 Finalize a configuração informando seu `email` e seu `token de ativação`. 
 **Dica**: Seu token de ativação é enviado para seu email no momento em que você finaliza seu cadastro.
 
+### SenderApp.conf
+Para alterar o endereço de email registrado, é possível excluir o arquivo de configuração e fazer uma nova configuração, ou apenas alterá-lo com o bloco de notas.  
+
+     C:\Program Files\Common Files\SenderApp.conf
+
 ## Próximos Passos - Primeiro envio
 
 É necessário possui o WhatsApp Desktop instalado e aberto em seu computador. 
@@ -69,9 +74,9 @@ Como uma forma de limitar o uso indevido da ferramenta, um sistemas de cotas de 
 - Cada usuário possui `100 cotas por padrão`.
 - **Cada mensagem enviada, onde a requisição de envio é realizada com sucesso, independente da resposta do solicitação, consome** `01 cota`.
 - Para o bot ser iniciado é necessário possui ao menos `10 números válidos`em sua lista de contatos.
-- O Servidor *SenderApp for WhatsApp* recicla `02 cotas a cada minuto`.
+- O Servidor *SenderApp for WhatsApp* recicla `02 cotas a cada minuto`. Portanto, não é necessário esperar 01 hora obrigatoriamente para realizar o próximo envio, basta ter no mínimo 10 cotas disponíveis e contatos válidos para realizar envios com mais frequência. 
+- O servidor não possui autenticação segura, como oAuth ou API's de Autenticação, ao fazer uma requisição ao servidor, seu **e-mail** e **token** são validados antes de terem seus dados retornados a aplicação. Por mais que não seja uma autenticação completamente segura, o envio da mensagem é realizado pelo número que estiver logado no WhatsApp Desktop, ou seja, não faria sentido outra pessoa mandar a sua mensagem de outro número, considerando que só você possui acesso a planilha e pode editar a mensagem.
 
-Portanto, não é necessário esperar 01 hora obrigatoriamente para realizar o próximo envio, basta ter no mínimo 10 cotas disponíveis e contatos válidos para realizar envios com mais frequência. 
 
 # Roadmap - Futuras Implementações:
 
