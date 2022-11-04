@@ -1,0 +1,7 @@
+/*
+*.psd
+!dist
+!logo
+!*.md
+!.gitignore
+!*.py
